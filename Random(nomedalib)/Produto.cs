@@ -17,18 +17,19 @@ namespace Random_nomedalib_ {
 
 
         // propriedades
-        public int Id { get { return id; } set { id = value; } }
-        public string Descricao { get { return descricao; } set { descricao = value; } }
-        public string Unidade { get { return unidade; } set { unidade = value; } }
-        public string Codbar { get { return codbar; } set { codbar = value; } }
-        public double Valor { get { return valor; } set { valor = value; } }
-        public double Desconto { get { return desconto; } set { desconto = value; } }
+        public int Id { get { return id; } }
+        public string Descricao { get { return descricao; } }
+        public string Unidade { get { return unidade; } }
+        public string Codbar { get { return codbar; } }
+        public double Valor { get { return valor; } }
+        public double Desconto { get { return desconto; } }
 
         // construtores
         public Produto() {
         }
 
-        public Produto(string descricao, string unidade, string codbar, int valor, int desconto) {
+        public Produto(int Id, string descricao, string unidade, string codbar, int valor, int desconto) {
+            this.id = Id;
             this.descricao = descricao;
             this.unidade = unidade;
             this.codbar = codbar;
@@ -36,6 +37,5 @@ namespace Random_nomedalib_ {
             this.desconto = desconto;
         }
 
-        // métodos de classe
     }
 }
