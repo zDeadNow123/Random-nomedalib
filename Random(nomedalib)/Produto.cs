@@ -4,9 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Random_nomedalib_
-{
-    public class Class1
-    {
+namespace Random_nomedalib_ {
+    internal class Produto {
     }
 }
