@@ -13,22 +13,35 @@ namespace Random_nomedalib_ {
         private int id;
         private string nome;
         private string email;
+        private Nivel nivel;
         private string password;
         private bool ativo = true;
 
         // propriedades
-        public int Id { get { return id; } set { id = value; } }
-        public string Nome { get { return nome; } set { nome = value; } }
-        public string Email { get { return email; } set { email = value; } }
-        public string Password { get { return password; } set { password = value; } }
+        public int Id { get { return id; } }
+        public string Nome { get { return nome; } }
+        public string Email { get { return email; } }
+        public string Password { get { return password; } }
+        public Nivel Nivel { get { return nivel; } }
         public bool Ativo { get { return ativo; } set { ativo = value; } }
 
         // métodos construtores
-        public Usuario(int id, string nome, string email, string password, bool ativo) {
+        public Usuario() {
+        }
+
+        public Usuario(string nome, string email, string password, Nivel nivel) {
+            this.nome = nome;
+            this.email = email;
+            this.password = password;
+            this.nivel = nivel;
+        }
+
+        public Usuario(int id, string nome, string email, string password, Nivel nivel, bool ativo) {
             this.id = id;
             this.nome = nome;
             this.email = email;
             this.password = password;
+            this.nivel = nivel;
             this.ativo = ativo;
         }
 
